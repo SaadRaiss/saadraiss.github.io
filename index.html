@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saad Raiss — Big Data Analytics (UEMF)</title>
+  <meta name="description" content="CV en ligne — Saad Raiss, étudiant ingénieur Big Data Analytics (EIDIA, UEMF). Stages en Data/ML (TGR), Full-stack (UEMF), et DIC (Commune de Fès).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1115;--card:#131721;--text:#e6e9ef;--muted:#aab0bc;--accent:#5eead4;--chip:#1f2533;--border:#23283a}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:980px;margin:32px auto;padding:0 16px}
+    header{
+      background:linear-gradient(180deg,rgba(94,234,212,0.08),rgba(94,234,212,0.0));
+      border:1px solid var(--border);border-radius:18px;padding:28px;
+      display:grid;grid-template-columns: 1fr auto;gap:16px;align-items:center;
+    }
+    .title h1{margin:0;font-size:32px;letter-spacing:0.4px}
+    .title p{margin:6px 0 0;color:var(--muted)}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .badge{border:1px solid var(--accent);color:var(--bg);background:var(--accent);padding:8px 12px;border-radius:12px;font-weight:600}
+    .ghost{border:1px solid var(--border);background:transparent;color:var(--text);padding:8px 12px;border-radius:12px;font-weight:600}
+    main{margin-top:24px;display:grid;grid-template-columns: 2fr 1fr;gap:24px}
+    @media (max-width: 900px){main{grid-template-columns:1fr}}
+    section{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px}
+    h2{margin:0 0 10px 0;font-size:20px}
+    .item{padding:12px 0;border-bottom:1px dashed var(--border)} .item:last-child{border-bottom:none}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .chip{background:var(--chip);color:var(--text);padding:6px 10px;border-radius:999px;font-size:13px;border:1px solid var(--border)}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:12px} @media (max-width: 700px){.cols{grid-template-columns:1fr}}
+    .footer{margin-top:24px;color:var(--muted);text-align:center;font-size:14px}
+    .list{margin:0;padding-left:18px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title">
+        <h1>Saad Raiss</h1>
+        <p>Étudiant ingénieur — Big Data Analytics (EIDIA, UEMF)</p>
+        <div class="chips" aria-label="accents">
+          <span class="chip">Permis B</span>
+          <span class="chip">À la recherche d’un stage PFE (6 mois) — dès février 2026</span>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="badge" href="#contact">Me contacter</a>
+        <a class="ghost" href="#experiences">Expériences</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>À propos</h2>
+        <div class="item">
+          <p>
+            Étudiant en 5<sup>e</sup> année (3<sup>e</sup> année cycle ingénieur) à l’École d’Ingénierie Digitale et d’Intelligence Artificielle (EIDIA), filière <strong>Big Data Analytics</strong> (UEMF, Fès).
+            Intérêt marqué pour l’<strong>ingénierie de données</strong>, l’<strong>analyse avancée</strong> et l’<strong>IA</strong>. Habitué aux environnements Python/ML et au développement web.
+          </p>
+          <div class="chips">
+            <span class="chip">DuckDB</span><span class="chip">Parquet</span><span class="chip">Pandas</span><span class="chip">Scikit-learn</span>
+            <span class="chip">TensorFlow</span><span class="chip">Django</span><span class="chip">SQLite</span><span class="chip">Tailwind CSS</span>
+            <span class="chip">JavaScript</span><span class="chip">HTML/CSS</span>
+          </div>
+        </div>
+
+        <h2 id="competences">Compétences</h2>
+        <div class="cols">
+          <div class="item">
+            <strong>Techniques</strong>
+            <ul class="list">
+              <li>Data engineering local : Parquet + DuckDB, features (lags, saisonnalité sin/cos, fenêtres médiane/MAD)</li>
+              <li>Détection d’anomalies : règles robustes (MAD) + IsolationForest</li>
+              <li>Prévisions : LSTM + ETS/ARIMA (MAE/RMSE)</li>
+              <li>Full-stack web : Django, SQLite, Tailwind, JS/HTML</li>
+            </ul>
+          </div>
+          <div class="item">
+            <strong>Soft skills</strong>
+            <ul class="list">
+              <li>Problem-solving</li>
+              <li>Esprit d’initiative</li>
+              <li>Adaptabilité</li>
+              <li>Gestion du stress</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 id="experiences">Expériences</h2>
+        <div class="item">
+          <strong>Stagiaire Data/ML</strong> — Trésorerie Générale du Royaume (TGR) — 2024–2025
+          <div class="meta">Direction des Ressources et du SI — Division Développement — Service Architecture & Conception</div>
+          <ul class="list">
+            <li>Structuration 2020–2025 en <strong>data mart local</strong> (Parquet + DuckDB) et <em>feature engineering</em>.</li>
+            <li>Alerting hybride : règles robustes + <strong>IsolationForest</strong>.</li>
+            <li>Module de <strong>prévision</strong> (LSTM + ETS/ARIMA), évaluation MAE/RMSE, livrables BI (anomalies, prévisions, caps & seuils).</li>
+            <li>Recommandations d’industrialisation.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <strong>Développeur Full-stack</strong> — UEMF, Département des SI — 2023–2024
+          <ul class="list">
+            <li>Développement de l’app web <em>UEMF Fitness</em> (Django, SQLite 3, Tailwind CSS, JavaScript, HTML).</li>
+            <li>Accent sur l’<strong>analyse de Big Data</strong> côté usage et métriques.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <strong>Stagiaire</strong> — Commune de Fès, Département Informatique & Communication — 06/2023–08/2023
+          <ul class="list">
+            <li>Participation aux missions SI et support technique.</li>
+          </ul>
+        </div>
+
+        <h2>Éducation</h2>
+        <div class="item">
+          <strong>EIDIA — UEMF</strong> — Big Data Analytics — <em>5e année (3e année cycle ingénieur)</em>
+        </div>
+        <div class="item">
+          <strong>Classes préparatoires intégrées</strong> — EIDIA — 2 ans
+        </div>
+        <div class="item">
+          <strong>Baccalauréat</strong> — Filière Internationale Sciences Physiques — Lycée Al Jabr, Fès
+        </div>
+        <div class="item">
+          <strong>Machine Learning Summer School</strong> — Université d’Oxford — IA générative (à distance, 2025)
+        </div>
+
+        <h2>Engagements</h2>
+        <div class="item">
+          <strong>Rotaract Club UEMF (District 9010)</strong> — Communication Manager (11/2022–05/2023), Trésorier (05/2023–09/2024), Membre actif (10/2022–présent)
+        </div>
+        <div class="item">
+          <strong>Google Developer Student Clubs — UEMF</strong> — Membre de l’année 2024–2025
+        </div>
+
+        <h2>Certifications</h2>
+        <div class="item">
+          MATLAB: Computer Vision Onramp, Image Processing Onramp, MATLAB Onramp — Certificats
+        </div>
+        <div class="item">
+          Formation IA avec TensorFlow — Google Developer Group On Campus (UEMF)
+        </div>
+
+        <h2>Langues</h2>
+        <div class="cols">
+          <div class="item">
+            <ul class="list">
+              <li>Arabe — maternelle</li>
+              <li>Français — B2 (DELF/DALF)</li>
+            </ul>
+          </div>
+          <div class="item">
+            <ul class="list">
+              <li>Anglais — courant</li>
+              <li>Espagnol — débutant</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="item">
+          <div class="meta">Localisation: Fès, Maroc</div>
+          <ul class="list">
+            <li>Email : <a href="mailto:moulaysaad.raiss@gmail.com">moulaysaad.raiss@gmail.com</a></li>
+            <li>Téléphone : (+212) 682811863</li>
+            <li>LinkedIn : <a href="https://www.linkedin.com/in/saad-raiss-521362211" target="_blank" rel="noopener">linkedin.com/in/saad-raiss-521362211</a></li>
+            <li>GitHub : <a href="https://github.com/SaadRaiss" target="_blank" rel="noopener">github.com/SaadRaiss</a></li>
+          </ul>
+          <p style="color:var(--muted);font-size:14px;margin-top:8px">
+            (Liens et coordonnées mis à jour)
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      © <span id="y"></span> Saad Raiss — Big Data Analytics (EIDIA, UEMF) · Site statique GitHub Pages
+    </div>
+  </div>
+  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>
