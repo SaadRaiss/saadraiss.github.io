@@ -82,3 +82,17 @@ h2{margin:0 0 14px 0;font-size:22px}
   .cards{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
 }
+
+/* -------- Formations (grille 2 colonnes) -------- */
+.edu-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:18px}
+.subhead{margin:0 0 8px 0;font-size:14px;color:var(--muted);letter-spacing:.2px;text-transform:uppercase}
+@media (max-width:900px){.edu-grid{grid-template-columns:1fr}}
+
+/* ===== Certifications (cartes pro en grille) ===== */
+.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.cert{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.cert-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.cert h4{margin:0;font-size:16px}
+.issuer{font-size:13px;color:var(--muted)}
+.pill{font-size:12px;line-height:1;padding:6px 8px;border-radius:999px;border:1px solid var(--border);background:#172033;color:#dfe7f4;white-space:nowrap}
+@media (max-width:900px){.cert-grid{grid-template-columns:1fr}}
