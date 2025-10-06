@@ -1,4 +1,4 @@
-﻿/* Portfolio — Saad Raiss (clean, structuré) */
+/* Portfolio — Saad Raiss (clean, structuré) */
 @charset "UTF-8";
 html{ -webkit-text-size-adjust:100%; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
 body{ font-family: Inter, system-ui, "Segoe UI", Roboto, Arial, sans-serif; }
@@ -110,6 +110,4 @@ h2{margin:0 0 14px 0;font-size:22px}
   .cards{ grid-template-columns: 1fr; }
   .contact-grid{ grid-template-columns: 1fr; }
 }
-
-
 
