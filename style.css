@@ -1,4 +1,4 @@
-/* Portfolio — Saad Raiss (clean, structuré) */
+﻿/* Portfolio â€” Saad Raiss (clean, structurÃ©) */
 :root{
   --bg:#0f1117;
   --panel:#121a26;
@@ -96,3 +96,4 @@ h2{margin:0 0 14px 0;font-size:22px}
 .issuer{font-size:13px;color:var(--muted)}
 .pill{font-size:12px;line-height:1;padding:6px 8px;border-radius:999px;border:1px solid var(--border);background:#172033;color:#dfe7f4;white-space:nowrap}
 @media (max-width:900px){.cert-grid{grid-template-columns:1fr}}
+
