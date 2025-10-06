@@ -1,4 +1,4 @@
-﻿/* Portfolio â€” Saad Raiss (clean, structurÃ©) */
+﻿/* Portfolio — Saad Raiss (clean, structuré) */
 @charset "UTF-8";
 html{ -webkit-text-size-adjust:100%; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
 body{ font-family: Inter, system-ui, "Segoe UI", Roboto, Arial, sans-serif; }
@@ -101,7 +101,7 @@ h2{margin:0 0 14px 0;font-size:22px}
 .pill{font-size:12px;line-height:1;padding:6px 8px;border-radius:999px;border:1px solid var(--border);background:#172033;color:#dfe7f4;white-space:nowrap}
 @media (max-width:900px){.cert-grid{grid-template-columns:1fr}}
 
-/* Typo responsive & grilles adaptÃ©es mobile */
+/* Typo responsive & grilles adaptées mobile */
 .hero-text h1{ font-size: clamp(28px, 4.2vw, 40px); line-height: 1.2; }
 .wrap{ padding-left: 16px; padding-right: 16px; }
 .btn{ white-space: nowrap; }
@@ -110,5 +110,6 @@ h2{margin:0 0 14px 0;font-size:22px}
   .cards{ grid-template-columns: 1fr; }
   .contact-grid{ grid-template-columns: 1fr; }
 }
+
 
 
