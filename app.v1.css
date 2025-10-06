@@ -1,0 +1,114 @@
+﻿/* Portfolio â€” Saad Raiss (clean, structurÃ©) */
+@charset "UTF-8";
+html{ -webkit-text-size-adjust:100%; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+body{ font-family: Inter, system-ui, "Segoe UI", Roboto, Arial, sans-serif; }
+
+:root{
+  --bg:#0f1117;
+  --panel:#121a26;
+  --text:#e8ecf2;
+  --muted:#aab4c4;
+  --brand:#5da8ff;
+  --accent:#34d399;
+  --border:#203049;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+
+/* Topbar */
+.topbar{position:sticky;top:0;background:rgba(15,17,23,.7);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--border);z-index:50}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#1f2937 0%, #111827 60%);border:1px solid var(--border);color:#fff;font-weight:700}
+.title{display:flex;flex-direction:column}
+.title strong{font-size:15px}
+.title span{font-size:12px;color:var(--muted)}
+.nav a{color:var(--text);margin-left:16px}
+.nav a:hover{color:var(--brand)}
+
+/* Hero */
+.hero{padding:56px 0;border-bottom:1px solid var(--border);background:radial-gradient(1200px 300px at 70% -10%, rgba(93,168,255,.22), transparent)}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:24px}
+.hero-text h1{margin:0 0 10px 0;font-size:36px;line-height:1.2}
+.hero-text h1 span{color:var(--brand)}
+.hero-text p{color:var(--muted)}
+.cta{display:flex;gap:10px;margin:16px 0 10px}
+.btn{display:inline-block;padding:10px 14px;border-radius:12px;background:var(--accent);color:#0b0f16;font-weight:700;border:1px solid #1a2b23}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn.small{padding:8px 12px;border-radius:10px;font-weight:600}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.chip{background:#172033;border:1px solid var(--border);color:#fff;padding:6px 10px;border-radius:999px;font-size:13px}
+
+/* Sections */
+section{padding:42px 0;border-bottom:1px solid var(--border)}
+h2{margin:0 0 14px 0;font-size:22px}
+
+/* Timeline */
+.timeline{display:grid;gap:16px}
+.xp{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px}
+.xp header{margin-bottom:6px}
+.xp h3{margin:0 0 4px 0;font-size:18px}
+.meta{color:var(--muted);font-size:14px}
+.xp ul{margin:8px 0 0 18px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.tags span{font-size:12px;background:#172033;border:1px solid var(--border);padding:4px 8px;border-radius:999px;color:#ccd3df}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px;display:flex;flex-direction:column}
+.card-title{font-weight:700;font-size:17px}
+.card-sub{color:var(--muted);margin-bottom:6px}
+.card p{color:var(--muted)}
+.bul{margin:6px 0 0 18px}
+.bul.small li{margin:4px 0}
+.actions{margin-top:10px}
+.tags{margin-top:auto}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:18px}
+.cont{list-style:none;margin:0;padding:0}
+.cont li{margin:8px 0}
+.note{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px;color:#cfe9d7}
+
+/* Footer */
+.foot{padding:20px 0}
+.foot .wrap{display:flex;gap:10px;align-items:center;justify-content:center;color:var(--muted)}
+.sep{opacity:.6}
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+}
+
+/* -------- Formations (grille 2 colonnes) -------- */
+.edu-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:18px}
+.subhead{margin:0 0 8px 0;font-size:14px;color:var(--muted);letter-spacing:.2px;text-transform:uppercase}
+@media (max-width:900px){.edu-grid{grid-template-columns:1fr}}
+
+/* ===== Certifications (cartes pro en grille) ===== */
+.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.cert{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.cert-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.cert h4{margin:0;font-size:16px}
+.issuer{font-size:13px;color:var(--muted)}
+.pill{font-size:12px;line-height:1;padding:6px 8px;border-radius:999px;border:1px solid var(--border);background:#172033;color:#dfe7f4;white-space:nowrap}
+@media (max-width:900px){.cert-grid{grid-template-columns:1fr}}
+
+/* Typo responsive & grilles adaptÃ©es mobile */
+.hero-text h1{ font-size: clamp(28px, 4.2vw, 40px); line-height: 1.2; }
+.wrap{ padding-left: 16px; padding-right: 16px; }
+.btn{ white-space: nowrap; }
+@media (max-width:900px){
+  .hero-grid{ grid-template-columns: 1fr; }
+  .cards{ grid-template-columns: 1fr; }
+  .contact-grid{ grid-template-columns: 1fr; }
+}
+
+
